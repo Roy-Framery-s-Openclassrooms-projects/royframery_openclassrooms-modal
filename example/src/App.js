@@ -1,28 +1,34 @@
-import React, { useState } from 'react'
+import React from 'react'
 // css
 import './App.css'
 
 import { Modal } from '@royframery_openclassrooms/modal'
 import '@royframery_openclassrooms/modal/dist/index.css'
 
-const App = () => {
-    const [isModal, setModal] = useState(false)
+// const Content = () => {
+//     return (
+//         <>
+//             <p>You are a super Modal</p> <p>And you deserve it !</p>
+//         </>
+//     )
+// }
 
-    const showModal = () => {
-        setModal(true)
-    }
-    const resetIsModal = () => {
-        setModal(false)
-    }
+const App = () => {
+    // const displayAfterClose = () => {
+    //     console.log('The modal is now close')
+    // }
+    // const displayBeforeToOpen = () => {
+    //     return true
+    // }
+
     return (
         <main className='main'>
-            <div className='form'>
-                <button onClick={() => showModal()}>Save</button>
-            </div>
             <Modal
-                text='Employee Created !'
-                show={isModal}
-                callBack={resetIsModal}
+            // buttonText='Save'
+            // isOpen={false}
+            // afterCloseModal={displayAfterClose}
+            // BeforeOpenModal={displayBeforeToOpen}
+            // CloseButtonStyle={{ left: '-12px', right: 'unset' }}
             />
         </main>
     )
