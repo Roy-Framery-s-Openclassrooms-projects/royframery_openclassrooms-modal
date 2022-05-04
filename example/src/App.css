@@ -5,3 +5,18 @@
     align-items: center;
     height: 100vh;
 }
+
+.main__button {
+    height: 40px;
+    width: 70px;
+    border: none;
+    border-radius: 5px;
+    transition: box-shadow 300ms;
+    cursor: pointer;
+    background-color: #ff7f00;
+    color: #fff;
+}
+
+.main__button:hover {
+    box-shadow: 0 2px 10px #0000007e;
+}
